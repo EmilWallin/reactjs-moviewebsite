@@ -29,7 +29,7 @@ export const GlobalStyle = createGlobalStyle`
         }
 
         h3 {
-            font-size: 1.rem;
+            font-size: 1.5rem;
             font-weight: 600;
         }
 
@@ -38,5 +38,4 @@ export const GlobalStyle = createGlobalStyle`
             color: var(--white);
         }
     }
-
 `

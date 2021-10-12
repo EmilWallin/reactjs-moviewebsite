@@ -19,4 +19,16 @@ export const Content = styled.div`
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 2rem;
 
+    animation: animateGridContent 1.3s;
+
+
+@keyframes animateGridContent {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 `;

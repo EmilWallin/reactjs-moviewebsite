@@ -48,6 +48,7 @@ const Home = () => {
 
                     }
                     movieId={movie.id}
+                    isHome={true}
                     />
                 ))}
             </Grid>

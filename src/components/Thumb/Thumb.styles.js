@@ -1,3 +1,4 @@
+import React from "react";
 import styled from "styled-components";
 
 export const Image = styled.img`
@@ -8,11 +9,13 @@ export const Image = styled.img`
     border-radius: 20px;
     animation: animateThumb 0.5s;
     
-
-    :hover {
-        width: 103%;
+     ${ props  => props.isHome ? 
+     `:hover {
+        width: 101%;
         opacity: 0.8;
-    }
+    }`
+        : ``
+    };
 
     @keyframes animateThumb {
         from {

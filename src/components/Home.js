@@ -3,7 +3,7 @@ import React from "react";
 //import API from '../API';
 
 //Styles
-import { Wrapper } from "./Home.styles";
+import { Wrapper, EmptySpace } from "./Home.styles";
 
 //Config
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
@@ -59,6 +59,7 @@ const Home = () => {
             {state.page < state.total_pages && !loading && (
                 <Button text='Load More' callback={() => setIsLoadingMore(true)} />
             )}
+            <EmptySpace/>
         </Wrapper>
     )
 };

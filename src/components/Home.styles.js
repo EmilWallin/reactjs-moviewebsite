@@ -5,6 +5,6 @@ export const Wrapper = styled.div`
 `;
 
 export const EmptySpace = styled.div`
-    height: 20px;
+    height: 25px;
     background: lightgray;
 `;

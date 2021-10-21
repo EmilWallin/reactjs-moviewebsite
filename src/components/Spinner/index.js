@@ -1,4 +1,4 @@
-import {Spinner, spinner} from './Spinner.styles'
+import {Spinner} from './Spinner.styles'
 
 export default Spinner;
 

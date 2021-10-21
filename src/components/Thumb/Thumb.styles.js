@@ -21,7 +21,8 @@ export const Image = styled.img`
     @keyframes animateThumb {
         from {
             opacity: 0;
-            transform: scale(0.01);
+            ${ props  => props.isHome ? 
+            `transform: scale(0.01);` : ``};
         }
         to {
             opacity: 1;

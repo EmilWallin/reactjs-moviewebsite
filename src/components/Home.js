@@ -2,6 +2,9 @@ import React from "react";
 //API
 //import API from '../API';
 
+//Styles
+import { Wrapper } from "./Home.styles";
+
 //Config
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 //Components
@@ -26,7 +29,7 @@ const Home = () => {
     if (error) return <div>Something went wrong...</div>
 
     return (
-        <>
+        <Wrapper >
             {!searchTerm && state.results[0] ? (
             <HeroImage 
             image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
@@ -56,7 +59,7 @@ const Home = () => {
             {state.page < state.total_pages && !loading && (
                 <Button text='Load More' callback={() => setIsLoadingMore(true)} />
             )}
-        </>
+        </Wrapper>
     )
 };
 

@@ -9,6 +9,8 @@ import Grid from './Grid';
 import Spinner from './Spinner';
 import MovieInfoBar from "./MovieInfoBar";
 import Actor from './Actor';
+//Styles
+import { Wrapper } from "./Home.styles";
 //Hook
 import { useMovieFetch } from "../hooks/useMovieFetch";
 //Image
@@ -23,7 +25,7 @@ const Movie = () => {
     if (error) return <div>Something went wrong...</div>
 
     return (
-        <>
+        <Wrapper>
             <BreadCrumb movieTitle={movie.original_title}/>
             <MovieInfo movie={movie}/>
             <MovieInfoBar time={movie.runtime} budget={movie.budget} revenue={movie.revenue}/>
@@ -41,7 +43,7 @@ const Movie = () => {
                     />
                 ))}
             </Grid>
-        </>
+        </Wrapper>
     )
 };
 

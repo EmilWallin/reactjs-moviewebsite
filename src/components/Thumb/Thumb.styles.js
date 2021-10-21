@@ -5,12 +5,14 @@ export const Image = styled.img`
     max-width: 720px;
     transition: all 0.3s;
     object-fit: cover;
+
+    
     border-radius: 20px;
     animation: animateThumb 0.5s;
     
      ${ props  => props.isHome ? 
      `:hover {
-        width: 101%;
+        transform: scale(1.05);
         opacity: 0.8;
     }`
         : ``
@@ -19,11 +21,11 @@ export const Image = styled.img`
     @keyframes animateThumb {
         from {
             opacity: 0;
-            width: 10%;
+            transform: scale(0.01);
         }
         to {
             opacity: 1;
-            width: 100%;
+            transform: scale(1);
         }
     }
 `;

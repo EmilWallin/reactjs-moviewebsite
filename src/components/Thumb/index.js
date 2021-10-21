@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 import {Image} from './Thumb.styles';
 
 const Thumb = ({image, movieId, clickable, isHome} ) => (
-    <div>
+    <>
         {clickable ? (
             <Link to={`/${movieId}`}>
                 <Image src={image} alt='movie-thumb' isHome={isHome} />
             </Link>
         ) : (<Image src={image} alt='movie-thumb' />) }
 
-    </div>
+    </>
 );
 
 Thumb.propTypes = {

@@ -16,6 +16,8 @@ export const Wrapper = styled.button`
     cursor: pointer;
 
     :hover {
-        opacity: 0.8;
+        transform: scale(1.01);
+        opacity: 0.9;
+        transition: opacity .3s ease-in-out;
     }
 `;

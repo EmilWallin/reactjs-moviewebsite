@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     };
     background-size: cover;
     background-position: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
     animation: animateMovieInfo 1s;
 
     @keyframes animateMovieInfo{
@@ -23,7 +23,8 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
     display: flex;
-    max-width: var(--maxWidth);
+    max-width: var(--maxMovieInfoWidth);
+    
     margin: 0 auto;
     background: rgba(0,0,0,0.7);
     border-radius: 20px;

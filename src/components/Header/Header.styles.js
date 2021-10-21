@@ -20,6 +20,11 @@ export const LogoImg = styled.img`
     @media screen and (max-width: 500px) {
         width: 150px;
     }
+
+    :hover {
+        opacity: 0.6;
+        transition: opacity .3s ease-in-out;
+    }
 `;
 
 export const TMDBLogoImg = styled.img`
